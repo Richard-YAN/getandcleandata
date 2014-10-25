@@ -1,4 +1,4 @@
-Get and cleand ata
+Get and clean data
 ===============
 
 Get and clean data
