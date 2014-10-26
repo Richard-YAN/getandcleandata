@@ -94,4 +94,4 @@ Please refer to the README.md file for the details.
      <pre><code>
      [1] WALKING            WALKING_UPSTAIRS   WALKING_DOWNSTAIRS SITTING            STANDING           LAYING 
      </code></pre>
-* 
+* The other columns is the mean value for these measurements coresponding to the 30 subjects and 6 activities.  
