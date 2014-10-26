@@ -1,5 +1,4 @@
 # Getting and cleaning data
-===============
 
 ## Course Project
 
@@ -27,7 +26,7 @@ There four files in this repository, they are
 4. CodeBook.md: the description for tidy data. 
 
 
-### How to use run_analysis.R script
+### How to execute run_analysis.R script
 
 Before you execute the run_analysis.R script, you need to download the raw data from the data source link given above, then unzip the file, then step into the file folder: UCI HAR Dataset which is created during unzipping raw data file. By the mean time, set it as your current working directory for you R Studio or other R executing enviorment. Then in the R executing enviorment, source the script:
 
