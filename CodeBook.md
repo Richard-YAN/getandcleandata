@@ -89,8 +89,9 @@ Please refer to the README.md file for the details.
     [82] "fBodyBodyGyroJerkMag.meanFreq.."
    </code></pre>
 * Totally, there are 180 records, it represents the combination of 30 subjects and 6 activities. 
-* The 30 subjects is labeled as subject_id, its value is from 1 to 30, integer. 
-* The 6 activities are:
+* The 30 subjects is labeled as "subject_id", its value is from 1 to 30. It is the first column of tidy data. 
+* The 6 activities, corresponding id is from 1 to 6, refer to column "activity_id", and the corresponding text description is stored in column "activity_label",  they are:
      <pre><code>
      [1] WALKING            WALKING_UPSTAIRS   WALKING_DOWNSTAIRS SITTING            STANDING           LAYING 
      </code></pre>
+* 
