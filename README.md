@@ -45,16 +45,16 @@ After a while, tidy.txt file would be generated in the current working folder. I
     
 1. Reading files into memory
 
-    1.1 Reading data package information
-    1.2 Reading testing data
-      1.2.1 Assign column name to x_test data
-    1.3. Reading training data
-      1.3.1 Assign column name to x_train
+    1. Reading data package information
+    2. Reading testing data
+    3. Assign column name to x_test data
+    4. Reading training data
+    5. Assign column name to x_train
       
 2. Merging training and testing data and create one data set
-    2.1. Bind corresponding subject ID to it's feature data
-    2.2. Merge testing and training data together, and sort it by subject_id
-       2.2.1. load package dplyr, because we need arrange() to sort data
+    1. Bind corresponding subject ID to it's feature data
+    2. Merge testing and training data together, and sort it by subject_id
+    3. load package dplyr, because we need arrange() to sort data
 
 Now we have one merged data set:
 * x
