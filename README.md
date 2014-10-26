@@ -56,18 +56,18 @@ After a while, tidy.txt file would be generated in the current working folder. I
     2. Merge testing and training data together, and sort it by subject_id
     3. load package dplyr, because we need arrange() to sort data
 
-Now we have one merged data set:
-* x
-* y
-* body_acc_x
-* body_acc_y
-* body_acc_z
-* body_gyro_x
-* body_gyro_y
-* body_gyro_z
-* total_acc_x
-* total_acc_y
-* total_acc_z
+      Now we have one merged data set:
+      * x
+      * y
+      * body_acc_x
+      * body_acc_y
+      * body_acc_z
+      * body_gyro_x
+      * body_gyro_y
+      * body_gyro_z
+      * total_acc_x
+      * total_acc_y
+      * total_acc_z
 
 3. Extracts only the measurements on the mean and standard deviation for each measurement. 
     1. extracts the measurements from features, and keep column "subject_id" as well 
