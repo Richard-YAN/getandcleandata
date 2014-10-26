@@ -30,9 +30,11 @@ There four files in this repository, they are
 ### How to use run_analysis.R script
 
 Before you execute the run_analysis.R script, you need to download the raw data from the data source link given above, then unzip the file, then step into the file folder: UCI HAR Dataset which is created during unzipping raw data file. By the mean time, set it as your current working directory for you R Studio or other R executing enviorment. Then in the R executing enviorment, source the script:
-<code>
+
+<pre><code>
 source('C:/Users/i305271/dev/src/git-hub/getandcleandata/run_analysis.R', echo=TRUE)
-</code>
+</code></pre>
+
 After a while, tidy.txt file would be generated in the current working folder. It should be the same as tidy.txt file in the current repository. 
 
 
