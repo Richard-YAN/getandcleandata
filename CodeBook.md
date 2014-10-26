@@ -1,6 +1,6 @@
-# CodeBook for the tidy data
+# CodeBook for the raw dat and tidy data
 
-This is a code book that describes the tidy data in tidy.txt file. 
+This is a code book that describes the raw data and the tidy data.  
 
 ## Raw Data information
 
@@ -41,16 +41,17 @@ The following files are available for the train and test data. Their description
 
 * 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
-Transformation details
+## Transformation details
 
-There are 5 parts:
+### There are 5 parts:
 
-Merges the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement.
-Uses descriptive activity names to name the activities in the data set
-Appropriately labels the data set with descriptive activity names.
-Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-How run_analysis.R implements the above steps:
+* Merges the training and the test sets to create one data set.
+* Extracts only the measurements on the mean and standard deviation for each measurement.
+* Uses descriptive activity names to name the activities in the data set
+* Appropriately labels the data set with descriptive activity names.
+* Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+### How run_analysis.R implements the above steps:
 
 Require reshapre2 and data.table librareis.
 Load both test and train data
