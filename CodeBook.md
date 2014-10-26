@@ -53,6 +53,10 @@ The following files are available for the train and test data. Their description
 
 ### How run_analysis.R implements the above steps:
 
+Please refer to the README.md file for the details. 
+
+### Tidy data information
+
 Require reshapre2 and data.table librareis.
 Load both test and train data
 Load the features and activity labels.
