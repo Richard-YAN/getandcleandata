@@ -69,5 +69,14 @@ Now we have one merged data set:
 * total_acc_y
 * total_acc_z
 
-
+3. Extracts only the measurements on the mean and standard deviation for each measurement. 
+    1. extracts the measurements from features, and keep column "subject_id" as well 
+    2. correspondingly, only keep the extracted_features data. 
+4. Uses descriptive activity names to name the activities in the data set
+    1.  Use the activities its number mapping relationship, append the corresponding activities name to y. 
+    2.  Bind the activity name to its corresponding measurement records. Exclude the subject_id from x, because it is already exist in y
+5. Appropriately labels the data set with descriptive variable names.
+6. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+    1. split data into subsets by the combined key (subject_id, activity_id), and apply statistics method mean to these subsets. 
+    2. write the tidy data into file tidy.txt
  
