@@ -1,4 +1,4 @@
-## Project description
+## Project task description
 # 1. Merges the training and the test sets to create one data set. 
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 # 3. Uses descriptive activity names to name the activities in the data set
@@ -11,7 +11,7 @@
 ###     Step into folder "UCI HAR Dataset" 
 ###     Then set current folder as working folder
 
-## 1. Reading files into memory, because all files are text file, so use file() to read them ####
+## 1. Reading files into memory
 ### 1.1 Reading Data Package information
 activitylables <- read.table("activity_labels.txt")[, 2]
 features <- read.table("features.txt")[, 2]
@@ -55,7 +55,7 @@ total_acc_z_train <- read.table("train\\Inertial Signals\\total_acc_y_train.txt"
 names(x_train) <- features
 
 ## 2. Merging the training and the test sets to create one data set. 
-### 2.1 Bind corresponding subject ID to it's feature data, and convert it as data frame for later use
+### 2.1 Bind corresponding subject ID to it's feature data
 subject_x_test             <- cbind( subject_test, x_test            )
 subject_y_test             <- cbind( subject_test, y_test            )
 subject_body_acc_x_test    <- cbind( subject_test, body_acc_x_test   )
@@ -98,13 +98,14 @@ colnames( subject_body_acc_x_train)[1] <- "subject_id"
 body_acc_x <- rbind( subject_body_acc_x_test, subject_body_acc_x_train)
 body_acc_x <- arrange( body_acc_x, subject_id)
 
-colnames(subject_body_acc_y_test)[1] <- "subject_id", "body_acc_y"
-colnames(subject_body_acc_y_train)[1] <- "subject_id", "body_acc_y"
+colnames(subject_body_acc_y_test)[1] <- "subject_id"
+colnames(subject_body_acc_y_train)[1] <- "subject_id"
 body_acc_y <- rbind( subject_body_acc_y_test, subject_body_acc_y_train)
 body_acc_y <- arrange(body_acc_y, subject_id)
 
-colnames( subject_body_acc_z_test )[1] <- "subject_id", "body_acc_z"
-colnames( subject_body_acc_z_train )[1] <- "subject_id", "body_acc_z"
+colnames( subject_body_acc_z_test )[1] <- "subject_id"
+colnames( subject_body_acc_z_train )[1] <- "subject_id"
+
 body_acc_z <- rbind(subject_body_acc_z_test,subject_body_acc_z_train)
 body_acc_z <- arrange( body_acc_z, subject_id )
 
@@ -138,7 +139,6 @@ colnames( subject_total_acc_z_train )[1] <- "subject_id"
 total_acc_z <- rbind(subject_total_acc_z_test, subject_total_acc_z_train)
 total_acc_z <- arrange( total_acc_z, subject_id)
 
-### 2.3 Convert feature data from factor to numeric
 
 ### Now, we got one data set: 
 ### 	x
@@ -188,9 +188,10 @@ tidy_data <- tidy_data[, 3:ncol(tidy_data)]
 tidy_data[,3] <- activitylables[ tidy_data[, 2] ]
 
 ## write the tidy data into file tidy.txt
-write.table(tidy_data, "tidy.txt", sep="\t")
+write.table(tidy_data, "tidy.txt", sep="\t", row.name=FALSE)
 
-
+# May use following code to read the tidy.txt into memory for verification
+#tidy_data2 <- read.table("tidy.txt", header = TRUE)
 
 
 
