@@ -55,7 +55,12 @@ The following files are available for the train and test data. Their description
 
 Please refer to the README.md file for the details. 
 
-### About the tidy data ( tidy.txt ) 
+## Tidy data description
+
+### Tidy data file
+  The tidy data is stored in file tidy.txt. 
+  
+### Tidy data columns description  
 
 * There are 82 columns, they are:
   <pre><code>
